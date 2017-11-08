@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" ng-app>
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<h2>Filters Lab</h2>
+	<p>try them out:</p>
+	<span ng-app>
+	  1) {{ "iMac" | uppercase }} <br>
+	  2) {{ 2895 | currency }} <br>
+	  3) {{ 1288323623006 | date:"MM/dd/yyyy 'at' h:mma"}} <br>
+	  4) {{ ['ca', 'ba', 'az'] | limitTo: 2 }} <br>
+	  5) <pre>{{ {'name':'Adrian', 'last': 'Mejia' } | json }}</pre>
+	  6) {{ [{n: 'Zack'}, {n: 'John'}, {n: 'Ana'}] | orderBy: '+n' | limitTo: 2 }} <br>  
+	</span>
+
+
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular.min.js"></script>
+</body>
+</html>
